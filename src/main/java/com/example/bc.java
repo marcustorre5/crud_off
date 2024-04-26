@@ -5,8 +5,10 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Scanner;
 
 import javax.naming.spi.DirStateFactory.Result;
+
 
 public class bc {
 
@@ -38,9 +40,17 @@ public class bc {
     //criar 
     public static void criar(Statement st ){
 
-        //movies filme = new movies();
-        //filme.filmes();
-        //String sql = "INSERT INTO filmes (nome_do_filme, ano) values ('"+filme.nome+"',"+filme.ano+");";
+        //adicionando dados personalizados para a tabela:
+        
+        // System.out.println("digite o nome do filme: ");
+        // Scanner inputfilme = new Scanner(System.in);
+        // String filme = inputfilme.nextLine();
+
+        // System.out.println("digite o ano do filme: ");
+        // Scanner inputano = new Scanner(System.in);
+        // int ano = inputano.nextInt();
+
+        // String sql = "INSERT INTO filmes (nome_do_filme, ano) values ('"+filme+"',"+ano+");";
 
         String sql = "INSERT INTO filmes (nome_do_filme, ano) values ('homem formiga',"+2017+");";
 
